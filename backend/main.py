@@ -14,7 +14,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -97,10 +97,11 @@ async def upload_file(file: UploadFile = File(...)):
         if not isinstance(explanation, str):
             raise ValueError("Explanation is not a string")
         
+        # print("Optimized code:", optimized_code[:100])
+        # print("Explanation:", explanation[:100])
         return JSONResponse(
             content={"optimizedCode": optimized_code, "explanation": explanation},
-            status_code=200,
-            media_type="application/json"
+            status_code=200
         )
     
     except Exception as e:
