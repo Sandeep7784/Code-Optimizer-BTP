@@ -53,13 +53,12 @@ def main(INPUT_FILE):
     # Step 7: Write the optimized code and explanations to output files
     # print(global_context)
     # write_file(OUTPUT_OPTIMIZED_CODE, global_context)
-    print(global_context)
+    # print(global_context)
     formatted_code_chunks = global_context + "\n\n" + extract_all_code_blocks(optimized_chunks)
     write_file(OUTPUT_OPTIMIZED_CODE, formatted_code_chunks)
     write_file(OUTPUT_EXPLANATIONS, explanations)
-
-
     return [formatted_code_chunks, explanations]
+    
     print(f"Optimized code and explanations saved to {OUTPUT_OPTIMIZED_CODE} and {OUTPUT_EXPLANATIONS}")
 
 if __name__ == "__main__":
