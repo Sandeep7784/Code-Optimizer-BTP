@@ -1,11 +1,10 @@
 import re
+import os
 
 # Function to read a file
 def read_file(file_path):
     with open(file_path, 'r') as file:
         return file.read()
-
-import os
 
 # Function to write a file
 def write_file(file_path, content):
