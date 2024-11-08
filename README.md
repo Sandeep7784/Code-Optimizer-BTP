@@ -5,7 +5,7 @@ Code Optimizer is a project aimed at optimizing code for better performance and 
 
 ## Prerequisites
 - Node.js (for frontend)
-- Python 3.x (for backend)
+- Python 3.10 or higher (for backend)
 - Virtual environment tool (e.g., `venv` for Python)
 - WSL (Windows Subsystem for Linux) if using Windows
 
