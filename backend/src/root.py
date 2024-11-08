@@ -11,8 +11,6 @@ load_dotenv()
 
 # Environment setup
 os.environ["GROQ_API_KEY"] = os.getenv('GROQ_API_KEY')
-os.environ["HF_TOKEN"] = os.getenv("HUGGING_FACE_KEY")
-os.environ["LANGSMITH_API_KEY"] = os.getenv("LANGCHAIN")
 
 INPUT_FILE = '../data/input_code.c'
 OUTPUT_OPTIMIZED_CODE = '../data/optimized_code.c'
