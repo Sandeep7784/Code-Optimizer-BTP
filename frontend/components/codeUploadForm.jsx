@@ -44,7 +44,6 @@ const CodeUploadForm = () => {
       const { optimizedCode, explanation } = response.data;
 
       setResults({ optimizedCode, explanation });
-      // console.log({ optimizedCode, explanation });
       navigate('/results', { state: { results: { optimizedCode, explanation } } });
     } catch (err) {
       setError(err.message);
